@@ -8,3 +8,4 @@
 * `git pull <remote name> <remote branch>`
 * `git branch -m <new name>` --> rename current branch
 * `git rm -r <file name> `--> to add an already removed file
+* `git rm -f PATH` --> unstages already added path or file
