@@ -25,3 +25,18 @@
 * `docker port [CONTAINER]` --> see published ports of the container
 * `docker stop CONTINER_ID` --> to stop a detached conntainer
 * `docker run -p 8888:80 prakhar1989/static-site` --> custom port binding (-p)
+* `docker search`. searching for an image
+* Base images are images that have no parent image, usually images with an OS like ubuntu, busybox or debian. Child images are images that build on base images and add additional functionality. 
+* We can build our custom images. For that, build a Dockerfile in the proj dir, you want to wrap in a contaoner, then build the image.
+* `docker build -t yourusername/catnip DIRECTORY_CONTAINING_DOCKERFILE` --> generate image with tag -t, `docker run -p 8888:5000 yourusername/catnip` runs the image.
+* `docker login` --> for pushing to dockerhub
+* `docker push LOCAL_IMAGE` --> push to dockerhub
+# kubernete-cheatsheet
+* First you need to build a yaml file to build a pod/service/deployment based on some images
+* `kubectl get nodes`
+* `kubectl get pods`
+* `kubectl get deployments`
+* `kubectl get services`
+* `kubectl create -f pod1.yaml`
+* `kubectl exec -it test-pod -- /bin/bash`
+* `kubectl delete -f pod1.yaml`
