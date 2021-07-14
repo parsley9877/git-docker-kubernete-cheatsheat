@@ -32,7 +32,7 @@
 * `docker login` --> for pushing to dockerhub
 * `docker push LOCAL_IMAGE` --> push to dockerhub
 # kubernete-cheatsheet
-* First you need to build a yaml file to build a pod/service/deployment based on some images
+* First you need to build a yaml file to build a pod/service/deployment/job/persistentvol based on some images, resources and configs
 * `kubectl get nodes`
 * `kubectl get pods`
 * `kubectl get deployments`
@@ -40,3 +40,7 @@
 * `kubectl create -f pod1.yaml`
 * `kubectl exec -it test-pod -- /bin/bash`
 * `kubectl delete -f pod1.yaml`
+* `kubectl log job/pod image`
+* `kubectl delete pvc test-vol`
+* `kubectl describe jobs/pods`
+* `kubectl get pvc test-vol`
